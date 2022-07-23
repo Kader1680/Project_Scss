@@ -1,63 +1,63 @@
-@import '_bg.scss';
-// @import url(../../project/main/_bg.scss);
-$maincolor: rgb(162, 244, 242);
-$font: open-sans;
-$bg: rgb(213, 213, 213);
-$size: 20px;
-$border-raduis: 10px;
+// @import '_bg.scss';
+// // @import url(../../project/main/_bg.scss);
+// $maincolor: rgb(162, 244, 242);
+// $font: open-sans;
+// $bg: rgb(213, 213, 213);
+// $size: 20px;
+// $border-raduis: 10px;
 
-@if $bg == rgb(213, 213, 213) {
-    $bg : rgb(179, 239, 179);
-}@else{
-    $bg : rgb(215, 162, 199);
+// @if $bg == rgb(213, 213, 213) {
+//     $bg : rgb(179, 239, 179);
+// }@else{
+//     $bg : rgb(215, 162, 199);
 
-}
+// }
 
-@mixin border($n) {
+// @mixin border($n) {
     
-    border: $n solid rgb(94, 94, 94);
-}
-.main{
-    font-size: $size * 2;
-    padding: 10px;
-    margin: 10px;
-}
-.container{
-    background-color: $bg;
-    .section{
-        @extend .main;
-        color: $maincolor;
-        border-radius: $border-raduis;
-        @include border(2px);
-    }
-    .about{
-        @extend .main;
-        color: $maincolor;
-        border-radius: $border-raduis * 2;
-        @include border(4px);
+//     border: $n solid rgb(94, 94, 94);
+// }
+// .main{
+//     font-size: $size * 2;
+//     padding: 10px;
+//     margin: 10px;
+// }
+// .container{
+//     background-color: $bg;
+//     .section{
+//         @extend .main;
+//         color: $maincolor;
+//         border-radius: $border-raduis;
+//         @include border(2px);
+//     }
+//     .about{
+//         @extend .main;
+//         color: $maincolor;
+//         border-radius: $border-raduis * 2;
+//         @include border(4px);
 
 
-    }
-    .services{
-        @extend .main;
-        color: $maincolor;
-        border-radius: $border-raduis * 42;
-        @include border(6px);
+//     }
+//     .services{
+//         @extend .main;
+//         color: $maincolor;
+//         border-radius: $border-raduis * 42;
+//         @include border(6px);
 
 
-    }
-    .login{
-        @extend .main;
-        color: $maincolor;
-        border-radius: $border-raduis / 2;
-        @include border(0px);
+//     }
+//     .login{
+//         @extend .main;
+//         color: $maincolor;
+//         border-radius: $border-raduis / 2;
+//         @include border(0px);
 
 
-    }
-    &:hover{
-        background-color: white;
-    }
-}
+//     }
+//     &:hover{
+//         background-color: white;
+//     }
+// }
 
 
 /*
@@ -86,11 +86,8 @@ $border-raduis: 10px;
 
 
 
+// @import 'sass/layout/_header.scss';
 
-
-
-
-
-
-
-
+nav{
+    background-color: red;
+}
